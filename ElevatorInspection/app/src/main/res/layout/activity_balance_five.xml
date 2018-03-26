@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:focusableInTouchMode="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:text="电梯曳引性能测试仪"
+        android:textColor="#ABC"
+        android:id="@+id/five_tvTitle"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/five_btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/five_tvTitle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="步骤三：计算电梯平衡系数"
+            android:textColor="#ABC"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电梯平衡系数为"
+                android:textColor="#ABC"
+                android:textSize="40sp" />
+
+            <EditText
+                android:id="@+id/balance_five_etBalanceFactor"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:inputType="numberDecimal"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBalanceFiveBack"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:text="返回主界面"
+            android:textSize="35sp" />
+    </LinearLayout>
+</RelativeLayout>

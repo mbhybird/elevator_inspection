@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:text="电梯曳引性能测试仪"
+        android:textColor="#ABC"
+        android:id="@+id/check_tvTitle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:id="@+id/btnLayout"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:textSize="35sp"
+            android:id="@+id/btnCommCheck"
+            android:background="@drawable/button"
+            android:text="通讯连接测试"/>
+        <Button
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:textSize="35sp"
+            android:id="@+id/btnCheckBack"
+            android:background="@drawable/button"
+            android:text="返回主界面"/>
+        <EditText
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_etRevData"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/signalLayout"
+        android:layout_below="@+id/check_pb"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/layoutPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/btnCheckPower"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="功率测量模块通信"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/check_chkPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:button="@drawable/checkbox_style"
+                android:checked="true"
+                android:gravity="center"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAcc"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCheckAcc"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="速度测速模块通信"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/check_chkAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:button="@drawable/checkbox_style"
+                android:checked="true"
+                android:gravity="center"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutPlu"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:id="@+id/btnPlu"
+                android:background="@color/colorAccent"
+                android:text="脉冲测速模块通信"/>
+            <CheckBox
+                android:button="@drawable/checkbox_style"
+                android:id="@+id/check_chkPlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:checked="true"
+                android:gravity="center"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/check_pb"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

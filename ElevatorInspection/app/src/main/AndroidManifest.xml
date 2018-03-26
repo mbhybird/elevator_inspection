@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mbhybird.elevatorinspection">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+     <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/lift"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/lift"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UDPTestActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".FunctionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QueryResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BalanceOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BalanceTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BalanceThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BalanceFourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BalanceFiveActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:text="电梯曳引性能测试仪"
+        android:textColor="#ABC"
+        android:id="@+id/check_tvTitle"/>
+
+    <LinearLayout
+        android:id="@+id/layoutQueryByDate"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="40sp"
+            android:id="@+id/tvQueryByDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按日期查找" />
+
+        <EditText
+            android:textColor="@color/colorAccent"
+            android:id="@+id/etQueryByDate"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="40sp"
+            android:inputType="date"/>
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnQueryByDate"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:background="@drawable/button"
+            android:text="确定" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layoutQueryByDate"
+        android:id="@+id/layoutQueryByNo"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="40sp"
+            android:id="@+id/tvQueryByNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按编号查找" />
+
+        <EditText
+            android:textColor="@color/colorAccent"
+            android:id="@+id/etQueryByNo"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="40sp"
+            android:inputType="number" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnQueryByNo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:background="@drawable/button"
+            android:text="确定" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layoutQueryByNo"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:id="@+id/btnQueryBack"
+            android:layout_marginTop="20dp"
+            android:textSize="35sp"
+            android:background="@drawable/button"
+            android:text="返回主界面"/>
+    </LinearLayout>
+</RelativeLayout>

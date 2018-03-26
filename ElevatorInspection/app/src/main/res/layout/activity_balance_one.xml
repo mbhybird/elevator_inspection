@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:focusableInTouchMode="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:text="电梯曳引性能测试仪"
+        android:textColor="#ABC"
+        android:id="@+id/one_tvTitle"/>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one_tvTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_layout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电梯类型"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/holo_orange_light"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spType"
+                    android:layout_width="310dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:entries="@array/type"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电梯编号"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+
+            <EditText
+                android:id="@+id/one_et_number"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测速方式"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/holo_orange_light"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spMethod"
+                    android:layout_width="310dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:entries="@array/method"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主机型式"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/holo_orange_light"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spModel"
+                    android:layout_width="310dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:entries="@array/model"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="额定速度"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+
+            <EditText
+                android:id="@+id/one_et_manualSpeed"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="m/s"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="额定载荷"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+
+            <EditText
+                android:id="@+id/one_et_load"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="kg"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   曳引比"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/holo_orange_light"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spScale"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:entries="@array/scale"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBalanceOneOK"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:text="确定"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btnBalanceOneBack"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:text="返回上一层"
+            android:textSize="35sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:text="电梯曳引性能测试仪"
+        android:textColor="#ABC"
+        android:id="@+id/four_tvTitle"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/four_btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/four_tvTitle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="步骤二：同步电梯速度"
+            android:textColor="#ABC"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/four_et_udPower"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/balance_four_btnSpeedTest"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button"
+                    android:text="同步电梯速度"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/balance_four_btnEnd"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button"
+                    android:text="结束"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/balance_four_chart_DSpeed"
+                    android:layout_width="350dp"
+                    android:layout_height="160dp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/balance_four_chart_USpeed"
+                    android:layout_width="350dp"
+                    android:layout_height="160dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBalanceFive"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:text="下一步"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btnBalanceFourBack"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:text="返回上一层"
+            android:textSize="35sp" />
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/four_check_pb"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

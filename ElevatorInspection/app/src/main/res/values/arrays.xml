@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>有机房电梯</item>
+        <item>无机房电梯</item>
+    </string-array>
+    <string-array name="method">
+        <item>在限速器测量速度</item>
+        <item>手动输入额定速度</item>
+    </string-array>
+    <string-array name="model">
+        <item>永磁同步式主机</item>
+        <item>蜗轮蜗杆式主机</item>
+    </string-array>
+    <string-array name="scale">
+        <item>1 : 1</item>
+        <item>2 : 1</item>
+        <item>4 : 1</item>
+    </string-array>
+</resources>
